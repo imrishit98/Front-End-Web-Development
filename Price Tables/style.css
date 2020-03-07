@@ -1,0 +1,33 @@
+/**
+ * @ Author: Rishit Patel
+ * @ Create Time: Mar 05, 2020 11:17:32
+ * @ Description: Style.css for Bootstrap Price Tables
+ */
+
+.card {
+    border-radius: 10px;
+}
+
+.card .card-header {
+    border-radius: 10px 10px 0 0;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    .priceCards .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(2, 42, 85, 0.356);
+        transition: all 0.25s;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        margin: 0 1.1rem;
+    }
+    .theTitle {
+        font-size: 2em;
+    }
+}
