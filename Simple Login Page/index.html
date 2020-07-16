@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Login Page</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-area">
+        <div class="login-card">
+          <div class="head">
+            <img src="./images/ArkeiTech.svg" alt="ArkeiTech" />
+          </div>
+          <div class="fields">
+            <form id="loginForm">
+              <input
+                type="text"
+                placeholder="Username or email address"
+                name="user"
+                class="inputs"
+                id="username"
+              />
+              <input
+                type="password"
+                name="pass"
+                id="password"
+                class="inputs"
+                placeholder="Password"
+              />
+
+              <a href="#" id="forgot" class="other-txt">Forgot my password</a>
+
+              <div class="submit-btn">
+                <input
+                  type="submit"
+                  value="Log In"
+                  id="logIn"
+                  class="btn login"
+                />
+                <span class="other-txt new-account">
+                  Don't have an account?
+                  <a href="#" onclick="signUp()">Sign Up</a>
+                </span>
+              </div>
+            </form>
+            <form id="signUpForm" style="display: none;">
+              <input
+                type="text"
+                placeholder="Full Name"
+                name="fullName"
+                class="inputs"
+                id="fullName"
+              />
+              <div class="one">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  name="newUserName"
+                  class="inputs"
+                  id="newUserName"
+                />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  name="email"
+                  class="inputs"
+                  id="email"
+                />
+              </div>
+
+              <div class="two">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  name="newPass"
+                  class="inputs"
+                  id="newPass"
+                />
+                <input
+                  type="password"
+                  placeholder="Confirm password"
+                  name="newPass2"
+                  class="inputs"
+                  id="newPass2"
+                />
+              </div>
+
+              <div class="submit-btn">
+                <input
+                  type="submit"
+                  value="Sign Up"
+                  id="signUp"
+                  class="btn sign-up"
+                />
+                <span class="other-txt new-account">
+                  Already have an account?
+                  <a href="#" onclick="logIn()">Log In</a>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

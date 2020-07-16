@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.main-area {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/back-img.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 200%;
+  -webkit-animation: animatedBackground 1111s ease-in-out infinite;
+          animation: animatedBackground 1111s ease-in-out infinite;
+}
+
+.login-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.89);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  -webkit-box-shadow: 0 2px 11px 0 rgba(99, 99, 99, 0.11), 0 4px 20px 0 rgba(99, 99, 99, 0.11);
+          box-shadow: 0 2px 11px 0 rgba(99, 99, 99, 0.11), 0 4px 20px 0 rgba(99, 99, 99, 0.11);
+  border-radius: 1.11px;
+  padding: 1.5rem 2.5rem;
+}
+
+.login-card .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-card .head img {
+  height: auto;
+  width: 15rem;
+}
+
+.login-card .head .txt {
+  font-size: 1.5rem;
+}
+
+.login-card .fields {
+  margin-top: 1rem;
+}
+
+.login-card .fields form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-card .fields .other-txt {
+  font-size: 0.72rem;
+  text-decoration: none;
+  color: #013975;
+  font-weight: 500;
+  margin-top: 0.1rem;
+  text-align: end;
+}
+
+.login-card .fields .new-account {
+  color: #000;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.login-card .fields .new-account a {
+  text-decoration: none;
+  color: #013975;
+  font-weight: 500;
+}
+
+.login-card .fields #fullName {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.login-card .fields .one .inputs:not(:last-child),
+.login-card .fields .two .inputs:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.login-card .fields .inputs {
+  width: 15rem;
+  border: none;
+  padding: 0.86rem;
+  background-color: #f0f0f0;
+  border-radius: 1.11px;
+}
+
+.login-card .fields .inputs::-webkit-input-placeholder {
+  color: #979797;
+}
+
+.login-card .fields .inputs:-ms-input-placeholder {
+  color: #979797;
+}
+
+.login-card .fields .inputs::-ms-input-placeholder {
+  color: #979797;
+}
+
+.login-card .fields .inputs::placeholder {
+  color: #979797;
+}
+
+.login-card .fields .inputs:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.login-card .fields .submit-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+}
+
+.login-card .fields .submit-btn .btn {
+  width: 100%;
+  height: 42px;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 1.11px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-card .fields .submit-btn .btn:focus {
+  outline: none;
+}
+
+.login-card .fields .submit-btn .login {
+  background: #8321ff;
+  background: linear-gradient(31deg, #8321ff -61%, #0989ff 111%);
+}
+
+.login-card .fields .submit-btn .login:focus {
+  background: #0989ff;
+}
+
+.login-card .fields .submit-btn .sign-up {
+  background: #8321ff;
+  background: linear-gradient(11deg, #09ffb5 -161%, #5eec07 51%);
+}
+
+.login-card .fields .submit-btn .sign-up:focus {
+  background: #5eec07;
+}
+
+@-webkit-keyframes animatedBackground {
+  0% {
+    background-size: 100% 200%;
+  }
+  100% {
+    background-size: 251% 400%;
+  }
+}
+
+@keyframes animatedBackground {
+  0% {
+    background-size: 100% 200%;
+  }
+  100% {
+    background-size: 251% 400%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
